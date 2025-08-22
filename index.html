@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Detailing Services - Shine like never before">
+    <title>Signature Detailing</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { line-height: 1.6; color: #333; }
+        header { background: #111; color: #fff; padding: 20px; position: sticky; top: 0; z-index: 10; }
+        header nav { display: flex; justify-content: space-between; align-items: center; }
+        header nav ul { list-style: none; display: flex; gap: 20px; }
+        header nav ul li a { color: #fff; text-decoration: none; transition: 0.3s; }
+        header nav ul li a:hover { color: #f4a261; }
+        
+        .hero { background: url('https://via.placeholder.com/1500x700') no-repeat center/cover; color: #fff; text-align: center; padding: 120px 20px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+        .hero a { background: #f4a261; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .hero a:hover { background: #e76f51; }
+
+        section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: center; }
+        .features div { padding: 20px; background: #f9f9f9; border-radius: 10px; transition: 0.3s; }
+        .features div:hover { transform: translateY(-5px); }
+
+        .about { text-align: center; }
+        .about img { max-width: 100%; border-radius: 10px; margin-top: 20px; }
+
+        .contact form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: auto; }
+        .contact input, .contact textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+        .contact button { padding: 10px; background: #111; color: #fff; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer; }
+        .contact button:hover { background: #333; }
+
+        footer { background: #111; color: #fff; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
 <body>
-  <h1>Hello, World!</h1>
-  <p>This is my first website on GitHub Pages!</p>
+    <header>
+        <nav>
+            <h2>Signature Detailing</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Premium Auto Detailing</h1>
+        <p>Make your car shine like never before with our expert services.</p>
+        <a href="#contact">Book Now</a>
+    </section>
+
+    <section id="features">
+        <h2 style="text-align:center; margin-bottom:20px;">Our Services</h2>
+        <div class="features">
+            <div>
+                <h3>Interior Detailing</h3>
+                <p>Deep clean and restore your car's interior for a fresh look.</p>
+            </div>
+            <div>
+                <h3>Exterior Wash</h3>
+                <p>High-quality exterior cleaning for a spotless shine.</p>
+            </div>
+            <div>
+                <h3>Ceramic Coating</h3>
+                <p>Advanced protection to keep your car looking new for years.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about making your vehicle look its best. Our team uses top-quality products and techniques to deliver exceptional results.</p>
+        <img src="https://via.placeholder.com/1000x500" alt="About Signature Detailing">
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 style="text-align:center; margin-bottom:20px;">Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Signature Detailing. All rights reserved.</p>
+    </footer>
 </body>
 </html>
